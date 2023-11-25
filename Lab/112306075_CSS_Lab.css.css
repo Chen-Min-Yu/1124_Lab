@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first CSS stylesheet</title>
+  <style>
+@media all {
+    body {
+      background-color: lightblue;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding:0;
+
+    }
+  }
+@media print {
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+
+    .text-center {
+    text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0; /* 清除默认navbar的margin */
+      padding: 0; /* 清除默认navbar的padding */
+    }
+
+    .navbar a {
+      text-decoration: none;
+      margin: 0
+      padding: 0;
+    }
+
+    .navbar .col {
+      position: relative;
+    }
+
+    .service-options {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      margin: 0
+      padding: 0;
+    }
+
+    .col:hover .service-options {
+      display: block;
+    }
+
+    .service-options a {
+      display: block;
+      padding: 0;
+      color: black;
+      text-decoration: none;
+    }
+
+    .service-options a:hover {
+      background-color: lightgray;
+    }
+
+  </style>
+</head>
+<body>
+</body>
+</html>
